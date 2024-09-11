@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset style="background-color: #a32b2d;">
+            <legend style="background-color: #4d80af;">Personal Data</legend>
+
+            <br />
+
+            <fieldset style="background-color: #d9a51e;">
+                <legend style="background-color: #4d80af;"><br /><br />Your Name<br /><br /><br /></legend>
+
+                <br />
+                <br />
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="firstName">First Name</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="firstName" name="firstName" placeholder="ex. Mohamed" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="secondName">Second Name</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="secondName" name="secondName" placeholder="ex. Ashraf" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <br />
+            <br />
+            <br />
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="phone">Your Phone</label></td>
+                        <td>:</td>
+                        <td><input type="tel" id="phone" name="phone" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>:</td>
+                        <td><input type="email" id="email" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td>:</td>
+                        <td><input type="password" id="password" name="password" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repassword">Re-Password</label></td>
+                        <td>:</td>
+                        <td><input type="password" id="repassword" name="repassword" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+            <br />
+            <br />
+
+
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+            <br />
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+
+            <br />
+            <br />
+            <br />
+
+            <input type="checkbox" name="studyState" id="student" value="student" />
+            <label for="student">Student</label>
+            <br />
+            <input type="checkbox" name="studyState" id="graduate" value="graduate" />
+            <label for="graduate">Graduate</label>
+
+            <br />
+            <br />
+            <br />
+
+            <!-- if you want it data list uncomment this and comment the select element -->
+            <!--
+            <input type="text" list="universities" name="university" value="AUC">
+            <datalist id="universities">
+                <option value="AUC" selected></option>
+                <option value="GUC"></option>
+                <option value="BUE"></option>
+                <option value="Cairo Uni."></option>
+                <option value="Mansoura Uni."></option>
+            </datalist>
+            -->
+
+            <select name="university" id="universities">
+                <optgroup label="three letters universities">
+                    <option value="AUC" selected>AUC</option>
+                    <option value="GUC">GUC</option>
+                    <option value="BUE">BUE</option>
+                </optgroup>
+
+                <optgroup label="normal universities">
+                    <option value="Cairo Uni.">Cairo University</option>
+                    <option value="Mansoura Uni.">Mansoura University</option>
+                </optgroup>
+            </select>
+            <br />
+
+            <button type="submit" style="background-color: black;"><img src="button.png" alt="Submit"
+                    width="75px" /></button>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
