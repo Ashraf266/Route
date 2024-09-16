@@ -1,0 +1,26 @@
+body{
+    background-color: darkgray;
+}
+
+.container
+{
+    text-align: center;
+}
+
+.item
+{
+    width: 25%;
+    float: left;
+}
+
+.item img
+{
+    width: 100%;
+}
+
+.clear-fix
+{
+    clear: both;
+}
+
+
