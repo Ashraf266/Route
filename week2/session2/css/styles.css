@@ -1,0 +1,23 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  background-color: aqua;
+}
+
+.gallery-item {
+  float: left;
+  width: 25%;
+  background-color: tomato;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
+.clear-fix {
+  clear: both;
+}
