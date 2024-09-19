@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Alegreya", serif;
+  background-color: white;
+  font-weight: 400;
+}
+
+p
+{
+  color: #686868;
+}
+
+h2
+{
+  font-size: 32px;
+  font-weight: 200;
+}
+
+nav ul li,
+footer ul li {
+  list-style: none;
+  display: inline;
+}
+
+nav ul li
+{
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  margin-right: 0.8rem;
+}
+
+nav ul 
+{
+  padding: 1rem 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header
+{
+  padding: 1.2rem 0;
+}
+
+header .logo
+{
+  width: 180px;
+}
+
+footer {
+  padding: 50px;
+  background-color: #353330;
+  text-align: center;
+}
+
+footer .logo
+{
+  width: 350px;
+  margin: 20px auto;
+}
+
+footer p
+{
+  font-size: 15px;
+  margin: 30px;
+}
+
+footer a
+{
+  margin: 0 3px;
+}
+
+div > img {
+  display: block;
+  width: 100%;
+}
+
+/* specific */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+
+.welcome-banner
+{
+  height: 110vh;
+  background-image: url(../images/drew-coffman-1872.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.welcome-text
+{
+  text-align: center;
+  padding: 100px;
+  margin: 50px;
+}
+
+.welcome-text p,
+.welcome-text h1
+{
+  color: white;
+}
+
+.welcome-text h1
+{
+  font-size: 76px;
+  font-weight: 400;
+  margin-bottom: 20px
+}
+
+.welcome-text p
+{
+  font-size: 22px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.button-style-1
+{
+  display: inline-block;
+  margin: 30px 5px;
+  padding: 15px 28px;
+  background-color: #8e7754;
+  font-weight: bold;
+}
+
+.button-style-2
+{
+  display: inline-block;
+  margin: 30px 5px;
+  padding: 15px 28px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.product
+{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding: 20px;
+}
+
+/* General */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.width-400px {
+  width: 400px;
+}
+
+.content-icon {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+}
+
+.social-icon {
+  width: 40px;
+  border-radius: 50%;
+  background-color: #484540;
+}
+
+.width-40percent {
+  width: 40%;
+}
+
+.width-60percent {
+  width: 60%;
+}
+
+.height-110vh
+{
+  height: 110vh;
+}
+
+.bg-light-gray
+{
+  background-color: #f8f8f8;
+}
+
+.bg-dark
+{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.text-24px
+{
+  font-size: 24px;
+}
+
+.align-center
+{
+  text-align: center;
+}
