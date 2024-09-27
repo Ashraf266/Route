@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Source Sans 3", "Source Code Pro", sans-serif;
+}
+
+p {
+  color: #555555;
+}
+
+a {
+  color: inherit;
+}
+
+div > img {
+  display: block;
+  width: 100%;
+}
+
+.container-80 {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 80px 0;
+}
+
+.container-80-no-pad {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.active {
+  color: #ff305b;
+}
+
+.pink {
+  color: #ff305b;
+}
+
+/* nav */
+/* ---------------------------------------------------------------------------------------------- */
+.navbar {
+  background-color: #333333;
+  width: 100%;
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar__text {
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #ff305b;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 18px 0;
+}
+
+.navbar__links {
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.navbar__item {
+  float: left;
+  padding-inline: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.navbar__item:hover {
+  color: #ff305b;
+}
+
+/* Header */
+/* ---------------------------------------------------------------------------------------------- */
+
+.header {
+  background-image: url(../images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.header__text {
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__p {
+  color: white;
+  font-weight: 600;
+  margin: 0 0 10px;
+  line-height: 1.1;
+  font-size: 24px;
+}
+
+.header__name {
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.header__profession {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* who */
+/* ---------------------------------------------------------------------------------------------- */
+
+.who__img-section {
+  width: 50%;
+}
+
+.who__img {
+  width: 360px;
+  margin-right: 80px;
+  border: #555555 10px solid;
+  border-radius: 5px;
+  position: relative;
+}
+
+.who__img img {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  border-radius: 5px;
+}
+
+.who__text {
+  width: 50%;
+}
+
+.who__text h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.who__text > p {
+  font-size: 16px;
+  border-bottom: 1px dashed #999999;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
