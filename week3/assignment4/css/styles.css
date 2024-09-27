@@ -183,7 +183,6 @@ div > img {
   color: #ff305b;
   font-size: 70px;
   font-weight: bold;
-  margin: 0 0 10px;
 }
 
 .header__profession {
@@ -227,7 +226,7 @@ div > img {
   height: 102%;
   position: absolute;
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
 .who__social-icons > div {
@@ -298,7 +297,7 @@ div > img {
   width: 25%;
   float: left;
   padding: 40px 20px;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .services__service h3 {
@@ -311,7 +310,7 @@ div > img {
 .services__service > div {
   width: 40px;
   color: #ff305b;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .services__service:hover {
@@ -365,7 +364,7 @@ div > img {
   left: 0;
   right: 30px;
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .portfolio__pic:hover::after {
@@ -502,4 +501,106 @@ iframe {
 .blog__link:hover
 {
   color:#ff305b;
+}
+
+
+/* contact us */
+/* ---------------------------------------------------------------------------------------------- */
+
+.contact-us
+{
+  width: 50%;
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px 0;
+}
+
+.contact-us__form
+{
+  text-align: left;
+}
+
+.contact-us__form input
+{
+  padding: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+.contact-us__form-sec1 input
+{
+  width: 48%;
+}
+
+.contact-us__form-sec2 input
+{
+  width: 100%;
+}
+
+.contact-us__form textarea
+{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.contact-us__form button
+{
+  padding: 10px 24px;
+  background-color: #ff305b;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+.contact-us__form button:hover {
+  background-color: red;
+}
+
+
+/* Footer */
+/* ---------------------------------------------------------------------------------------------- */
+
+footer
+{
+  background-color: #333333;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.footer-icons a
+{
+  padding: 10px;
+  transition: all 0.5s;
+  margin: 5px 0;
+}
+
+.footer-icons a:hover
+{
+  color: #ff305b;
+}
+
+footer p
+{
+  color: white;
+  font-size: 17px;
+}
+
+footer p a
+{
+  color: #ff305b;
+}
+
+footer p a:hover
+{
+  text-decoration: underline;
 }

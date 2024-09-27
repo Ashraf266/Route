@@ -319,15 +319,16 @@
             <div class="separation-3-lines"></div>
 
             <form action="#" class="contact-us__form">
-                <div>
-                    <input type="text" name="name" class="w-50p">
-                    <input type="email" name="email" class="w-50p">
+                <div class="contact-us__form-sec1">
+                    <input type="text" name="name" class="float-left" placeholder="Name" required>
+                    <input type="email" name="email" class="float-right" placeholder="Email" required>
+                    <div class="clear-fix"></div>
+                </div>
+                <div class="contact-us__form-sec2">
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
                 <div>
-                    <input type="text" name="subject">
-                </div>
-                <div>
-                    <textarea name="message"></textarea>
+                    <textarea name="message" rows="4" placeholder="Messaage for me" required></textarea>
                 </div>
 
                 <button>SEND MESSAGE</button>
@@ -337,11 +338,11 @@
         </div>
 
         <footer>
-            <div>
-                <div class="fa-brands fa-facebook-f"></div>
-                <div class="fa-brands fa-twitter"></div>
-                <div class="fa-brands fa-google"></div>
-                <div class="fa-brands fa-github"></div>
+            <div class="footer-icons">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+                <a href="#" class="fa-brands fa-github"></a>
             </div>
             <p>Copy Right 2018 © By <a href="#">Theme-fair</a> All Rights Reserved</p>
         </footer>
