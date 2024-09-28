@@ -134,6 +134,7 @@ div > img {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
+  transition: all 0.5s;
 }
 
 .navbar__item:hover {
@@ -239,6 +240,11 @@ div > img {
 .who__social-icons > div > a {
   color: white;
   padding-inline: 10px;
+  transition: all 0.5s;
+}
+
+.who__social-icons > div > a:hover {
+  color: #ff305b;
 }
 
 .who__text {
@@ -493,53 +499,44 @@ iframe {
   margin: 10px 0;
 }
 
-.blog__link
-{
+.blog__link {
   transition: all 0.5s;
 }
 
-.blog__link:hover
-{
-  color:#ff305b;
+.blog__link:hover {
+  color: #ff305b;
 }
-
 
 /* contact us */
 /* ---------------------------------------------------------------------------------------------- */
 
-.contact-us
-{
+.contact-us {
   width: 50%;
   text-align: center;
   margin: 40px auto;
   padding: 40px 0;
 }
 
-.contact-us__form
-{
+.contact-us__form {
   text-align: left;
 }
 
-.contact-us__form input
-{
+.contact-us__form input {
   padding: 12px;
   margin-bottom: 30px;
   border: 1px solid #999999;
   border-radius: 5px;
 }
 
-.contact-us__form-sec1 input
-{
+.contact-us__form-sec1 input {
   width: 48%;
 }
 
-.contact-us__form-sec2 input
-{
+.contact-us__form-sec2 input {
   width: 100%;
 }
 
-.contact-us__form textarea
-{
+.contact-us__form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 20px;
@@ -549,8 +546,7 @@ iframe {
   font-size: inherit;
 }
 
-.contact-us__form button
-{
+.contact-us__form button {
   padding: 10px 24px;
   background-color: #ff305b;
   color: white;
@@ -565,42 +561,35 @@ iframe {
   background-color: red;
 }
 
-
 /* Footer */
 /* ---------------------------------------------------------------------------------------------- */
 
-footer
-{
+footer {
   background-color: #333333;
   padding: 50px;
   text-align: center;
   color: white;
 }
 
-.footer-icons a
-{
+.footer-icons a {
   padding: 10px;
   transition: all 0.5s;
   margin: 5px 0;
 }
 
-.footer-icons a:hover
-{
+.footer-icons a:hover {
   color: #ff305b;
 }
 
-footer p
-{
+footer p {
   color: white;
   font-size: 17px;
 }
 
-footer p a
-{
+footer p a {
   color: #ff305b;
 }
 
-footer p a:hover
-{
+footer p a:hover {
   text-decoration: underline;
 }
