@@ -1,0 +1,95 @@
+.container {
+  background-color: yellow;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    "sec2"
+    "sec1"
+    "sec3"
+    "sec6"
+    "sec4"
+    "sec8"
+    "sec7"
+    "sec5"
+    "sec9"
+    "sec10";
+}
+
+.section-1 {
+  background-color: green;
+  grid-area: sec1;
+}
+
+.section-2 {
+  background-color: yellowgreen;
+  grid-area: sec2;
+}
+
+.section-3 {
+  background-color: tomato;
+  grid-area: sec3;
+}
+
+.section-4 {
+  background-color: red;
+  grid-area: sec4;
+}
+
+.section-5 {
+  background-color: blue;
+  grid-area: sec5;
+}
+
+.section-6 {
+  background-color: lightblue;
+  grid-area: sec6;
+}
+
+.section-7 {
+  background-color: gray;
+  grid-area: sec7;
+}
+
+.section-8 {
+  background-color: pink;
+  grid-area: sec8;
+}
+
+.section-9 {
+  background-color: beige;
+  grid-area: sec9;
+}
+
+.section-10 {
+  background-color: brown;
+  grid-area: sec10;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "sec2 sec2"
+      "sec1 sec1"
+      "sec3 sec6"
+      "sec4 sec4"
+      "sec8 sec5"
+      "sec7 sec5"
+      "sec9 sec9"
+      "sec10 sec10";
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 0.5fr;
+    grid-template-areas:
+      "sec1 sec1 sec2 sec2"
+      "sec3 sec4 sec4 sec5"
+      "sec6 sec7 sec7 sec5"
+      "sec8 sec9 sec10 sec10";
+  }
+}
