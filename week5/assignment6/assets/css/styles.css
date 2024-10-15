@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+div > img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   background-color: yellow;
   display: grid;
@@ -20,36 +35,106 @@
 .section-1 {
   background-color: green;
   grid-area: sec1;
+  padding: 40px 12.8px 0;
+}
+
+.section-1__img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .section-2 {
   background-color: yellowgreen;
   grid-area: sec2;
+
+  text-align: center;
+  padding-block: 50px;
 }
 
 .section-3 {
   background-color: tomato;
   grid-area: sec3;
+  text-align: center;
+  padding-block: 40px;
 }
 
 .section-4 {
   background-color: red;
   grid-area: sec4;
+  padding: 68px 12.8px 50px;
+}
+
+.section-4__img {
+  position: relative;
+  left: -115%;
+}
+
+.section-4__img img {
+  width: 200%;
 }
 
 .section-5 {
-  background-color: blue;
+  background-color: #8f76bc;
   grid-area: sec5;
+  text-align: center;
+  padding: 30px 5% 70px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-5__img-sec {
+  display: flex;
+  width: 373px;
+  height: 373px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #8166b0;
+}
+
+.section-5__img {
+  width: 240px;
+  position: relative;
+  left: -8px;
+  margin-top: 20px;
 }
 
 .section-6 {
   background-color: lightblue;
   grid-area: sec6;
+  text-align: center;
+  padding-block: 30px;
+}
+
+.section-6__img {
+  position: relative;
+  left: -7%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .section-7 {
-  background-color: gray;
+  background-color: #93b6b7;
   grid-area: sec7;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 80%;
+  text-align: center;
+}
+
+.section-7__text h2 {
+  padding-block: 31px;
+}
+
+.section-7__img {
+  position: relative;
+  left: -7%;
+  width: 90%;
 }
 
 .section-8 {
@@ -57,14 +142,39 @@
   grid-area: sec8;
 }
 
+.section-8 > div {
+  text-align: center;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  background-color: #35cfed;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-8__img {
+  width: 43.5px;
+  margin: 0 auto 10px;
+}
+
 .section-9 {
   background-color: beige;
   grid-area: sec9;
+  text-align: center;
 }
 
 .section-10 {
   background-color: brown;
   grid-area: sec10;
+  text-align: center;
+}
+
+.section-10__img {
+  position: relative;
+  left: -15%;
 }
 
 @media (min-width: 768px) {
