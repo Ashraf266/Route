@@ -1,0 +1,226 @@
+Bootstrap
+
+
+//background color
+.bg-primary
+.bg-primary-subtle
+.bg-secondary
+.bg-secondary-subtle
+.bg-success
+.bg-success-subtle
+.bg-danger
+.bg-danger-subtle
+.bg-warning
+.bg-warning-subtle
+.bg-info
+.bg-info-subtle
+.bg-light
+.bg-light-subtle
+.bg-dark
+.bg-dark-subtle
+.bg-body-secondary
+.bg-body-tertiary
+.bg-body
+.bg-black
+.bg-white
+.bg-transparent
+
+//make it gradient
+.bg-gradient
+
+//background opacity
+.bg-opacity-10
+.bg-opacity-25
+.bg-opacity-50
+.bg-opacity-75
+
+--------------------------------------------------
+
+//text color
+.text-primary
+.text-primary-emphasis
+.text-secondary
+.text-secondary-emphasis
+.text-success
+....
+.text-black
+.text-white
+.text-black-50
+.text-white-50 //opacity 50
+
+//text opacity
+.text-opacity-10
+.text-opacity-25
+.text-opacity-50
+.text-opacity-75
+
+//opacity property (NOT WITH TEXT ONLY)
+.opacity-0 === opacity: 0;
+.opacity-25
+.opacity-50
+.opacity-75
+.opacity-100
+
+--------------------------------------------------
+
+
+//add border
+.border
+.border-top
+.border-end
+.border-bottom
+.border-start
+
+//to remove one of the border
+.border.border-0 // remove border
+.border.border-top-0
+.border.border-bottom-0
+
+//border-color
+.border-primary
+.border-primary-subtle
+.border-secondary
+.border-secondary-subtle
+.border-danger
+....
+
+//border width
+.border-1
+.border-2
+.border-3
+.border-4
+.border-5
+
+//border radius
+.rounded // can be used without border 3ady
+.rounded-top
+.rounded-circle
+.rounded-pill
+.rounded-start
+....
+
+//border radius sizes
+.rounded-0 //border-radius: 0;
+.rounded-1
+.
+.
+.rounded-5
+
+//others
+.rounded-start-2
+.rounded-end-circle
+.rounded-start-pill
+.rounded-5.rounded-top-0
+
+//border opacity
+border-opacity-75
+border-opacity-50
+
+--------------------------------------------------
+
+//display
+
+.d-(size)-type
+//types: none, inline, inline-block, block, grid, inline-grid,
+table, table-cell, table-row, flex, inline-flex
+
+//sizes: sm md lg xl xxl
+//there's xs but have no implementation for the classes you should to classes
+
+//.d-none .d-sm-block in xs display none
+//mobile first approach (xs first then @media(min-width: sm) ...)
+
+.d-flex
+.d-sm-flex
+
+--------------------------------------------------
+
+
+//flex
+
+.d-flex
+
+//flex-direction
+.d-flex.flex-row
+.flex-row-reverse
+.flex-column
+.flex-column-reverse
+
+//can also be .flex-(size)-direction
+.flex-columns.flex-md-row //row from medium up..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
