@@ -76,7 +76,7 @@ h1{
 }
 
 .slider-section{
-    padding: 8rem;
+    padding-block: 8rem;
     background-image: linear-gradient(rgba(0,120,255,0.7), rgba(0,120,255,0.7)), url(../images/overlay-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -101,4 +101,72 @@ h1{
 
 .glow:hover{
     color: rgb(0,120,255) !important;
+}
+
+footer{
+    padding-top: 8rem;
+    background-image: linear-gradient(rgba(0,120,255,0.7), rgba(0,120,255,0.7)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title-a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+.icon-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.icon-circle-2 {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.6s;
+}
+
+.iconcard:has(.icon-circle-2):hover .icon-circle-2{
+    box-shadow: 0 0 0 10px #cde1f8;
+    background-color: #0078ff;
+    color:white;
+}
+
+.post-card img{
+    transition: all 0.6s;
+}
+
+.post-card:hover img{
+    transform: scale(1.3);
+}
+
+.portofolio-icon{
+    color: #0078ff;
+    padding: 10px;
+    font-size: 1rem;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
 }

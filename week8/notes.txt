@@ -1,0 +1,218 @@
++ operator have 3 uses in js
+
+adding 3+3 = 6
+concatenation 'test' + ' test' = 'test test'
+convert string to number +'3' => 3 (number)
+
+5 + 5 + '5' + 3 => '1053'
+
+'3' + 3 + 3 + 3 => '3333'
+
+'3' * '5' = 15 (number)
+
+
+Number('3') => 3 (number)
+
+Number('3.43') => 3.43 (number)
+
+Number('a') => NaN
+
+typeof NaN => number
+
+NaN * 2 = NaN
+
+anything arithmetic with NaN is NaN
+
+console.log('3' * 'a')
+console.log(Number('3') * Number('a'))=> 3 * NaN = NaN
+
+
++'string' == Number('string')
+
++'' => 0
+
+or use parseInt
+
+parseInt('alkdj33') => 33
+parseInt('33.33') => 33
+parseFloat('3.33') => 3.33
+parseInt('0101',2) => 5 convert binary to int
+
+-----------------------------------------------------
+
+comparison operator
+
+==  abstract equality      !=
+=== strict equality        !===
+
+//does type conversion
+'5' == 5 => true
+
+'5' === 5 => false
+'5' !== 5 => true
+
+null == undefined => true
+null === undefined => false
+NaN == NaN => false
+
+'10' > '5'  => false
+why false?
+it uses ascii table
+and it only compares first word because he want to make them the same length
+'1' > '5' ? => false
+
+-----------------------------------------------------
+
+Logical operators
+
+&& || !
+
+Boolean() => convert to Boolean
+can be used to check truthy and falsy values
+
+
+console.log( 5 && 4 && 10) => 10
+4 && 0 && 3 => 0
+
+&& return last true and first false
+
+|| returns last false and first true
+
+
+-------------------------------------------------------
+
+let x = window.prompt("message: ");
+
+prompt returns a string so it you want number
+
+let x = +window.prompt();
+
+-------------------------------------------------------
+
+conditional statements => if   switch
+
+
+if(condition)
+{
+
+
+}
+else if(condition)
+{
+
+
+}
+else
+{
+
+}
+
+
+//switch uses strict equality
+switch(variable or value)
+{
+
+case value:
+	//code
+	break;
+
+case value:
+	//code
+	break;
+
+default:
+	//code
+	break;
+}
+
+trick to use switch like if
+
+var age = 30;
+
+switch(true){
+
+	case age > 30:
+		//code
+		break;
+
+}
+
+
+-------------------------------------
+
+let x = 23.23452;
+
+x.toFixed(1) => '23.2'  returns a string
+x.toFixed(2) => '23.23'
+
+
+isNaN() return true or false
+
+isNaN(value) => true or false
+
+
+isNaN('a') => true
+
+isNan(4) => false
+
+--------------------------------------
+
+loops for while do..while
+
+for(init; condition; steps)
+{
+
+}
+
+
+
+string interpolation
+
+console.log('string' + variable + 'string');
+
+//template literal
+console.log(`string ${variable} string`);
+
+
+
+while(condition)
+{
+
+
+}
+
+do{
+
+
+
+
+}while(condition);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
