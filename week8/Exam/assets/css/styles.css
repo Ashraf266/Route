@@ -3,10 +3,10 @@ body {
 }
 
 p {
-    line-height: 1.6;
-    margin: 0;
-    font-size: 15px;
-    color: #748182;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
 }
 
 .logo {
@@ -19,7 +19,7 @@ p {
 .active {
   position: relative;
 }
-.active::after {
+.active:not(div)::after {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -36,170 +36,302 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.66)), url(../images/bg.jpg);
-    background-position: top left;
-    background-size: cover;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
+    url(../images/bg.jpg);
+  background-position: top left;
+  background-size: cover;
 }
-
 
 @media (max-width: 992px) {
-    .active::after{
-        display: none;
-    }
+  .active::after {
+    display: none;
+  }
 }
 
-.greeting{
-    font-size: 50px;
-    font-weight: 800;
-    margin-bottom: 10px;
+.greeting {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
-.who-font{
-    font-size: 4.4rem;
+.who-font {
+  font-size: 4.4rem;
+}
+
+@media (max-width: 640px) {
+  .who-font {
+    font-size: 2.4rem;
+  }
 }
 
 .header-icons span {
-    display: block;
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 10px 2px;
-  }
-  .header-icons span i {
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10px 2px;
+}
+.header-icons span i {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .about{
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-  }
+.about {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
 
-  .mb-80{
-    margin-bottom: 80px;
-  }
+.mb-80 {
+  margin-bottom: 80px;
+}
 
-  .about-image::after{
-    content: '';
-    background-image: url(../images/dots.png);
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    bottom: -2rem;
-    left: 1rem;
-    z-index: -1;
+.about-image::after {
+  content: "";
+  background-image: url(../images/dots.png);
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  bottom: -2rem;
+  left: 1rem;
+  z-index: -1;
+}
 
-  }
+.progress-bar {
+  width: 100%;
+  border-radius: 5px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+  margin-bottom: 30px;
+}
 
-  .progress-bar{
-    width: 100%;
-    border-radius: 5px;
-    background: #f7f7f7;
-    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
-    position: relative;
-    margin-bottom: 30px;
-  }
+.progress-b {
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+.progress-b p {
+  font-size: 12px;
+}
 
-  .progress-b{
-    padding: 2px 10px;
-    border-radius: 5px;
-  }
-  .progress-b p{
-    font-size: 12px;
-  }
+.button {
+  padding: 10px 30px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 12px;
+}
 
-  .button{
-    padding: 10px 30px;
-    border: 1px solid #1c1c1c;
-    border-radius: 5px;
-    font-size: 13px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    font-size: 12px;
-  }
+.button--dark {
+  background: #1c1c1c;
+  color: #fff;
+}
 
-  .button--dark{
-    background: #1c1c1c;
-    color: #fff;
-  }
+.button--dark:hover {
+  background: #fff;
+  color: #1c1c1c;
+}
 
-  .button--dark:hover{
-    background: #fff;
-    color: #1c1c1c;
-  }
-  
-  .button--light{
-    background: #fff;
-    color: #1c1c1c;
-  }
+.button--light {
+  background: #fff;
+  color: #1c1c1c;
+}
 
-  .button--light:hover{
-    background: #1c1c1c;
-    color: #fff;
-  }
+.button--light:hover {
+  background: #1c1c1c;
+  color: #fff;
+}
 
-  .service-title{
-    margin-bottom: 15px;
-    font-weight: 800;
-    font-size: 18px;
-  }
+.service-title {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
 
-  #services{
-    background-color: #f7f7f7;
-  }
+#services,
+#clients,
+#team {
+  background-color: #f7f7f7;
+}
 
-  .iconcard{
-    padding: 50px 20px;
-    background: #fff;
-    -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    border-radius: 5px;
-  }
+.iconcard {
+  padding: 50px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
 
-  .iconcard div{
-    font-size: 30px;
-    margin-bottom: 20px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    background: #f4f4f4;
-    border-radius: 50%;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+.iconcard div {
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
-  .iconcard:hover div{
-    color: white;
-    background-color: black;
-  }
+.iconcard:hover div {
+  color: white;
+  background-color: black;
+}
 
-  .section-title{
-    font-weight: 900;
-    font-size: 40px;
-    position: relative;
-    width: fit-content;
-    margin-inline: auto;
-    z-index: 0;
-  }
+.section-title {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  z-index: 0;
+  color: #595959;
+}
 
-  .section-title::after{
-    content: '';
-    background-image: url(../images/dots.png);
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    top: 30%;
-    left: 0;
-    z-index: -1;
-  }
+.section-title::after {
+  content: "";
+  background-image: url(../images/dots.png);
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 30%;
+  left: 0;
+  z-index: -1;
+}
+
+.small-icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s;
+}
+
+.small-icon:hover {
+  background-color: white !important;
+  color: black !important;
+  cursor: pointer;
+}
+
+.project-details {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.project:hover .project-details {
+  opacity: 1;
+}
+
+.modal {
+  --bs-modal-bg: transparent;
+  --bs-modal-border-color: transparent;
+  --bs-modal-width: 40%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #869791;
+}
+
+.carousel-indicators [data-bs-target]::after {
+  border: none;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+}
+
+h4 {
+  font-size: 16px;
+  color: #343434;
+}
+
+h5 {
+  font-size: 14px;
+  color: #869791;
+}
+
+.numbers {
+  font-weight: 900;
+  color: #343434;
+  font-size: 1.875rem;
+  line-height: 2.0625rem;
+  margin: 10px 0;
+}
+
+.team-member-text {
+  background-color: #595959;
+}
+
+.team-member-text h2 {
+  font-weight: 500;
+  font-size: 1.5625rem;
+  line-height: 1.75rem;
+}
+.team-member-text h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+}
+
+.member-details {
+  opacity: 0;
+  transform: rotateY(0) translateX(-50%) translateY(-50%) !important;
+  transform-origin: top left;
+  transition: all 0.8s;
+}
+
+.member:hover .member-details {
+  width: 100% !important;
+  height: 100% !important;
+  transform: rotateY(360deg) translateX(-50%) translateY(-50%) !important;
+  opacity: 1;
+}
+
+.member img {
+  transition: all 0.8s;
+}
+
+.member:hover img {
+  transform: scale(1.2);
+}
+
+.contact-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  background-color: #f7f7f7;
+  color: #343434;
+  transition: all 0.3s;
+}
+
+.contact-card:hover .contact-icon {
+  color: white;
+  background-color: black;
+}
+
+.form-control {
+  background-color: #f4f4f4;
+}
+
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+}
